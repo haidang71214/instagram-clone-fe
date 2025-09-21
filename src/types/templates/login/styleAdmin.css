@@ -1,0 +1,58 @@
+.registerForm {
+   display: flex;
+   justify-content: center; 
+   align-items: center;    
+   height: 80vh;
+ }
+ 
+ .hehe {
+   text-align: center; 
+ }
+ 
+ .headerRegis {
+   font-size: 2rem;
+   font-weight: bold;
+   margin-bottom: 20px; 
+ }
+ 
+ .inputRegis div {
+   margin-bottom: 10px; 
+ }
+ 
+ .inputRegis label {
+   display: block;
+   margin-bottom: 5px;
+ }
+ 
+ .inputRegis input {
+   width: 100%;
+   padding: 8px;
+   font-size: 1rem;
+   border-radius: 5px;
+   border: 1px solid #ccc;
+ }
+ .huhu{
+   display: flex;
+   label{
+      width: 150px;
+      background-color: rgba(247, 218, 192, 0.531);
+      border-top-right-radius:30px ;
+      border-bottom-left-radius: 30px;
+   }
+ }
+ .headerRegis{
+   background-color: #e60023de;
+   border-radius: 10px;
+   color: rgb(255, 255, 255);
+ }
+ .signbutton{
+   button{
+      background-color: #E60023;
+      width: 150px;
+      height: 30px;
+      color: white;
+      border-radius: 20px;
+      border-style: none;
+   }
+ }
+ 

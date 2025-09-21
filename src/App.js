@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
 
+import './App.css';
+import { BrowserRouter, Route,Routes } from 'react-router-dom';
+import Home from './components/Pages/Home';
+import Header from './components/Header';
+import LoginTemplates from './types/templates/login/LoginTemplates';
+import Register from './types/templates/login/Register';
+import { ToastContainer } from "react-toastify";
+import UpdateUser from './components/Pages/UpdateUser';
+import 'react-toastify/dist/ReactToastify.css';
+import DetailUser from './components/Pages/DetailUser';
+import CreateImage from './components/Pages/CreateImage';
+import DetailImge from './components/Pages/DetailImge';
+import ForgotPass from './components/Pages/ForgotPass';
+import ResetPassWord from './components/Pages/ResetPassWord';
+import Socket from './components/Pages/Socket.js';
+import Footer from './components/Pages/Footer.js';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <ToastContainer position="bottom-right"/>
+    <BrowserRouter>
+    <Header/>
+    <Routes>
+    <Route path='/' element={<Home/>}/>
+    <Route path='/login' element={<LoginTemplates/>}/>
+    <Route path='/register' element={<Register/>}/>
+    <Route path='/updateUser' element={<UpdateUser/>}/>
+    <Route path='/detailUser' element={<DetailUser/>}/>
+    <Route path='/createImg' element={<CreateImage/>}/>
+    {/* ? */}
+    <Route path='/detailimg/:image_id' element={<DetailImge/>}/>
+    <Route path='/forgotpass' element={<ForgotPass/>}/>
+    {/*  */}
+    <Route path='/changepass' element={<ResetPassWord/>}/>
+    <Route path='/socket' element={<Socket/>}/>
+    </Routes>
+    <Footer/>
+    </BrowserRouter>
+    </>
   );
 }
 

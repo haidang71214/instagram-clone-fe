@@ -20,7 +20,7 @@ export default function Home() {
 
    const renderDsPhim = () => {
       if (!Array.isArray(imageList) || imageList.length === 0) {
-         return <div>Không có dữ liệu</div>;
+         return <div>chưa có dữ liệu</div>;
       }
 
       return imageList.map((item, index) => {

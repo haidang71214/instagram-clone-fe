@@ -1,5 +1,5 @@
 import axios from "axios";
-export const BASE_URL = "http://localhost:8080";
+export const BASE_URL = "http://103.57.223.234:4002";
 const option = {
    params:{
       maxResults:50,

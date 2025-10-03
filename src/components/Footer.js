@@ -1,9 +1,8 @@
-import React from 'react';
 
 function Footer() {
   return (
     <footer>
-      <p> hehe web</p>
+      <p>Nothing beat a jet 2 holy day</p>
     </footer>
   );
 }
